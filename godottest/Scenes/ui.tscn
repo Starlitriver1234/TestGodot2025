@@ -1,17 +1,22 @@
-[gd_scene format=3 uid="uid://37g7txjlpiyl"]
+[gd_scene load_steps=2 format=3 uid="uid://37g7txjlpiyl"]
+
+[ext_resource type="Script" uid="uid://d0d0bri257hsn" path="res://Scripts/ui.gd" id="1_jxero"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 40.0
 offset_bottom = 40.0
+script = ExtResource("1_jxero")
 
 [node name="Lives" type="Label" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+text = "5"
 
 [node name="Enemies" type="Label" parent="."]
 layout_mode = 0
 offset_right = 40.0
 offset_bottom = 23.0
+text = "0"
