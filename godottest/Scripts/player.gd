@@ -2,7 +2,6 @@ extends CharacterBody2D
 
 var Speed := 300
 
-
 func _physics_process(delta):
 	velocity = Vector2(0, 0)
 	if Input.is_action_pressed("Up"):
