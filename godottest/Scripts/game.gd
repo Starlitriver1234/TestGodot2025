@@ -2,7 +2,7 @@ extends Node2D
 
 var lives = 5
 var enemy_number = 0
-
+@onready var number = $Enemy_Number
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
@@ -17,8 +17,11 @@ func _process(delta: float) -> void:
 func _on_spawner_enemy_spawned(EnemyInstance: Variant) -> void:
 	add_child(EnemyInstance)
 	enemy_number += 1
-	print(enemy_number)
+	_set_score_label(enemy_number)
 
+
+func _set_score_label(enemy_number):
+	number.text = "Enemies: " + str(enemy_number)
 
 func _on_hurt(lives: Variant) -> void:
 	lives -= 1

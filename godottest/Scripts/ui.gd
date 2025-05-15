@@ -1,11 +1,11 @@
 extends Control
 
-@onready var score
-@onready var lives
+@onready var enemy_number = $Enemies
+@onready var lives = $Lives
 
-# Called when the node enters the scene tree for the first time.
-func _ready() -> void:
-	pass # Replace with function body.
+#func _set_enemies_label(new_enemies):
+	#enemy_number.txt = "Number: " str(new_enemy)
+
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

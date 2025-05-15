@@ -11,12 +11,16 @@ script = ExtResource("1_jxero")
 
 [node name="Lives" type="Label" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "5"
+offset_left = 16.0
+offset_top = 26.0
+offset_right = 56.0
+offset_bottom = 49.0
+text = "Lives: 5"
 
 [node name="Enemies" type="Label" parent="."]
 layout_mode = 0
-offset_right = 40.0
-offset_bottom = 23.0
-text = "0"
+offset_left = 16.0
+offset_top = 2.0
+offset_right = 99.0
+offset_bottom = 25.0
+text = "Enemies: 0"
