@@ -1,5 +1,6 @@
 extends CharacterBody2D
 
+signal hurt
 
 var Speed := 300
 
@@ -18,6 +19,8 @@ func _physics_process(delta):
 	var screen_size = get_viewport_rect().size
 	global_position = global_position.clamp(Vector2(0,0), screen_size)
 
+func player_hurt():
+	emit_signal("hurt")
 
 func died():
 	queue_free()
