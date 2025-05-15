@@ -1,13 +1,13 @@
 extends Node2D
 
+signal enemy_spawned(EnemyInstance)
+
 var enemy_scene = preload("res://Scenes/enemy.tscn")
 
-# Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	pass # Replace with function body.
+	pass
 
 
-# Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta: float) -> void:
 	pass
 
@@ -20,4 +20,5 @@ func spawn():
 	var Random = Position_array.pick_random()
 	var EnemyInstance = enemy_scene.instantiate()
 	EnemyInstance.global_position = Random.global_position
+	enemy_spawned.emit(EnemyInstance)
 	
