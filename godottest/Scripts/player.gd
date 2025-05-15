@@ -1,8 +1,6 @@
 extends CharacterBody2D
 
-
-const Speed = 300.0
-const JUMP_VELOCITY = -400.0
+var Speed := 300
 
 
 func _physics_process(delta: float) -> void:
@@ -16,3 +14,8 @@ func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("Left"):
 		velocity.x = -Speed
 	move_and_slide()
+	var screen_size = get_viewport_rect().size
+	global_position = global_position.clamp(Vector2(0,0), screen_size)
+
+func died():
+	queue_free()

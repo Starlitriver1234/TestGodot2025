@@ -7,6 +7,7 @@
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(165, 331)
+scale = Vector2(0.242066, 0.300275)
 script = ExtResource("1_cvnsp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
