@@ -1,11 +1,13 @@
-[gd_scene load_steps=3 format=3 uid="uid://dc72yibpgjt60"]
+[gd_scene load_steps=4 format=3 uid="uid://dc72yibpgjt60"]
 
+[ext_resource type="Script" uid="uid://dpcbnc6uoyi52" path="res://Scripts/player.gd" id="1_cvnsp"]
 [ext_resource type="Texture2D" uid="uid://b2opchq3ujw21" path="res://icon.svg" id="1_v0iea"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cvnsp"]
 
 [node name="Player" type="CharacterBody2D"]
 position = Vector2(165, 331)
+script = ExtResource("1_cvnsp")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 scale = Vector2(-6.45518, 6.73605)
