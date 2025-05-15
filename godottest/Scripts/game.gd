@@ -33,6 +33,5 @@ func _set_lives_label(lives):
 	Lives.text = "Lives: " + str(lives)
 
 
-
 func _on_area_2d_area_entered(area: Area2D) -> void:
 	area.missed_player()
