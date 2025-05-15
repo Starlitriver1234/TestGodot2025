@@ -5,43 +5,45 @@
 [node name="Spawner" type="Node2D"]
 script = ExtResource("1_2bop2")
 
-[node name="Marker2D" type="Marker2D" parent="."]
-position = Vector2(1187, 14)
+[node name="Position" type="Node2D" parent="."]
 
-[node name="Marker2D2" type="Marker2D" parent="."]
-position = Vector2(1189, 76)
-
-[node name="Marker2D3" type="Marker2D" parent="."]
-position = Vector2(1192, 149)
-
-[node name="Marker2D4" type="Marker2D" parent="."]
-position = Vector2(1192, 232)
-
-[node name="Marker2D11" type="Marker2D" parent="."]
-position = Vector2(1254, 199)
-
-[node name="Marker2D12" type="Marker2D" parent="."]
-position = Vector2(1254, 430)
-
-[node name="Marker2D13" type="Marker2D" parent="."]
-position = Vector2(1254, 576)
-
-[node name="Marker2D5" type="Marker2D" parent="."]
+[node name="Marker2D5" type="Marker2D" parent="Position"]
 position = Vector2(1195, 308)
 
-[node name="Marker2D6" type="Marker2D" parent="."]
+[node name="Marker2D13" type="Marker2D" parent="Position"]
+position = Vector2(1254, 576)
+
+[node name="Marker2D4" type="Marker2D" parent="Position"]
+position = Vector2(1192, 232)
+
+[node name="Marker2D" type="Marker2D" parent="Position"]
+position = Vector2(1187, 14)
+
+[node name="Marker2D2" type="Marker2D" parent="Position"]
+position = Vector2(1189, 76)
+
+[node name="Marker2D3" type="Marker2D" parent="Position"]
+position = Vector2(1192, 149)
+
+[node name="Marker2D11" type="Marker2D" parent="Position"]
+position = Vector2(1254, 199)
+
+[node name="Marker2D12" type="Marker2D" parent="Position"]
+position = Vector2(1254, 430)
+
+[node name="Marker2D6" type="Marker2D" parent="Position"]
 position = Vector2(1195, 390)
 
-[node name="Marker2D7" type="Marker2D" parent="."]
+[node name="Marker2D7" type="Marker2D" parent="Position"]
 position = Vector2(1199, 463)
 
-[node name="Marker2D8" type="Marker2D" parent="."]
+[node name="Marker2D8" type="Marker2D" parent="Position"]
 position = Vector2(1199, 533)
 
-[node name="Marker2D9" type="Marker2D" parent="."]
+[node name="Marker2D9" type="Marker2D" parent="Position"]
 position = Vector2(1202, 596)
 
-[node name="Marker2D10" type="Marker2D" parent="."]
+[node name="Marker2D10" type="Marker2D" parent="Position"]
 position = Vector2(1202, 641)
 
 [node name="Timer" type="Timer" parent="."]
