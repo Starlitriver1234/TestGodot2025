@@ -12,7 +12,17 @@ script = ExtResource("1_wrm1d")
 [node name="Spawner" parent="." instance=ExtResource("3_wrm1d")]
 
 [node name="Enemy_Number" type="Label" parent="."]
-offset_right = 40.0
-offset_bottom = 23.0
+offset_left = 20.0
+offset_top = 29.0
+offset_right = 103.0
+offset_bottom = 52.0
+text = "Enemies: 0"
+
+[node name="Lives" type="Label" parent="."]
+offset_left = 20.0
+offset_top = 5.0
+offset_right = 77.0
+offset_bottom = 28.0
+text = "Lives: 5"
 
 [connection signal="enemy_spawned" from="Spawner" to="." method="_on_spawner_enemy_spawned"]
