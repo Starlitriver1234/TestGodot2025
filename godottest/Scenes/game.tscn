@@ -7,4 +7,4 @@
 
 [node name="Player" parent="." instance=ExtResource("1_ebmjs")]
 
-[node name="Enemy" parent="Player" instance=ExtResource("2_qxrlw")]
+[node name="Enemy" parent="." instance=ExtResource("2_qxrlw")]
